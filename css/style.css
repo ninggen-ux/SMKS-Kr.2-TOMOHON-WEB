@@ -70,10 +70,6 @@ h1 {
     display: block;
 }
 
-.dropdown .item:hover {
-    color: #d5d6d8;
-}
-
 .navbar__item__pengajar .hp {
     display: none;
 }
@@ -116,6 +112,10 @@ h1 {
 
     .dropdown .item {
         margin: 1.5px;
+    }
+
+    .dropdown .item:hover {
+        color: #d5d6d8;
     }
 }
 
