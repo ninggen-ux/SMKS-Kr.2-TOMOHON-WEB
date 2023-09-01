@@ -17,8 +17,9 @@ body {
     width: 100vw;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 3rem 0 5rem 0;
-    padding: 0 7vw 0 7vw;
+    padding: 0 7vw 0 5.5vw;
 }
 
 .navbar__item {
@@ -36,6 +37,23 @@ h1 {
     display: flex;
     justify-content: space-between;
     min-width: 17rem;
+    margin-bottom: 6px;
+}
+
+.logo__item__a {
+    display: flex;
+    align-items: center;
+}
+
+.logo__item__a h1 {
+    padding-bottom: 6px;
+}
+
+.logo__item__a img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 .navbar__animasi__bawah {
@@ -43,53 +61,137 @@ h1 {
     cursor: pointer;
 }
 
-.navbar__animasi__bawah::before {
-    position: absolute;
-    content: "";
-    bottom: -5px;
-    height: 4px;
-    width: 100%;
-    background-color: #f1f2f6;
-    border-radius: 3px;
-    transform: scaleX(0);
-    transition: 0.3s ease-in-out;
-}
-
-.navbar__animasi__bawah:hover::before {
-    transform: scaleX(1);
-}
-
 .navbar__item__home {
     position: relative;
     cursor: pointer;
-}
-
-.dropdown {
-    display: none;
-    position: absolute;
-    right: 0;
-    text-align: right;
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    width: 4rem;
-    border-radius: 1px;
-    z-index: 1;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
-        rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
-        rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-}
-
-.dropdown .item {
-    margin: 1.5px;
 }
 
 .navbar__item__home:hover .dropdown {
     display: block;
 }
 
+.dropdown .item:hover {
+    color: #d5d6d8;
+}
+
 .navbar__item__pengajar .hp {
     display: none;
 }
 
+.navbar__item__container .icon {
+    display: none;
+}
+
+@media screen and (min-width: 651px) {
+    .navbar__animasi__bawah::before {
+        position: absolute;
+        content: "";
+        bottom: -5px;
+        height: 4px;
+        width: 100%;
+        background-color: #f1f2f6;
+        border-radius: 3px;
+        transform: scaleX(0);
+        transition: 0.3s ease-in-out;
+    }
+
+    .navbar__animasi__bawah:hover::before {
+        transform: scaleX(1);
+    }
+
+    .dropdown {
+        display: none;
+        position: absolute;
+        right: 0;
+        text-align: right;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        width: 4rem;
+        border-radius: 1px;
+        z-index: 1;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+            rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+            rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    }
+
+    .dropdown .item {
+        margin: 1.5px;
+    }
+}
+
 @media screen and (max-width: 650px) {
+    .navbar {
+        flex-direction: row;
+        margin: 2rem 0 3rem 0;
+    }
+
+    .logo__item__a img {
+        display: none;
+    }
+
+    .logo__item__a h1 {
+        padding-bottom: 0;
+    }
+
+    .bar {
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar__item__home {
+        margin: 0 0 0.2rem 0;
+    }
+
+    .navbar__item__pengajar {
+        margin: 0 0 0.1rem 0;
+    }
+
+    .navbar__item__container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .navbar__item__container .icon {
+        display: flex;
+        justify-content: end;
+        color: #d5d6d8;
+    }
+
+    .navbar__item__container:hover .bar {
+        display: flex;
+        position: absolute;
+        top: 2rem;
+        right: 0;
+        width: 88vw;
+        min-width: 0;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+            rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    }
+
+    .navbar__item__pengajar .hp {
+        display: block;
+    }
+
+    .navbar__item__pengajar .pc {
+        display: none;
+    }
+
+    .dropdown {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 232px) {
+    .navbar__item__container .icon {
+        font-size: 2rem;
+    }
+
+    .navbar__item__container:hover .bar {
+        top: 3rem;
+    }
 }
