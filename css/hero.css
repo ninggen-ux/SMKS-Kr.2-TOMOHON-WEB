@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #064789;
+}
+
+.navbar__item a,
+h1 {
+    text-decoration: none;
+    color: #f1f2f6;
+}
+
 .hero {
     width: 100vw;
     display: flex;
