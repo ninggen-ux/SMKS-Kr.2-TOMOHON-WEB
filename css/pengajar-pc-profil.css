@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #064789;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.navbar__item a,
+h1,
+i,
+p {
+    text-decoration: none;
+    color: #f1f2f6;
+}
+
+.profil {
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+}
+
+.profil__info {
+    display: flex;
+    width: 38vw;
+    flex-direction: column;
+    margin-top: 20vh;
+}
+
+.profil__info__nama {
+    font-size: 4vw;
+    margin-bottom: 3%;
+}
+
+.profil__info p {
+    font-size: 1vw;
+    margin-bottom: 1.5%;
+}
+
+.profil__info__sosial-media {
+    display: flex;
+    width: 5vw;
+    justify-content: space-between;
+    font-size: 1.3vw;
+}
+
+.profil__gambar {
+    position: relative;
+}
+
+.profil__gambar__latar {
+    width: 37vw;
+    height: auto;
+    transition: 0.3s ease-in-out;
+}
+
+.profil__gambar__guru {
+    width: 35vw;
+    height: auto;
+    position: absolute;
+    top: -0.8vw;
+    left: 2vw;
+    transition: 0.3s ease-in-out;
+}
+
+.profil__gambar:hover .profil__gambar__guru {
+    left: 1vw;
+}
+
+.profil__gambar:hover .profil__gambar__latar {
+    margin-top: 1rem;
+}
