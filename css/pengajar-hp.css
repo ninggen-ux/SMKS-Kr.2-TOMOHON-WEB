@@ -5,13 +5,7 @@
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #f1f2f6;
-    position: relative;
+    display: none;
 }
 
 .navbar__item a,
@@ -20,27 +14,17 @@ h1 {
     color: #064789;
 }
 
-.error {
-    width: 35vw;
-    text-align: center;
-    color: rgb(255, 0, 0);
-}
-
-.error__h1 {
-    color: rgb(255, 0, 0);
-    font-size: 2rem;
-}
-
-.fa-face-dizzy {
-    margin: 0.5rem 0 1rem 0;
-    font-size: 15rem;
-}
-
-.menu-pengajar {
-    display: none;
-}
-
 @media screen and (max-width: 650px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #f1f2f6;
+        position: relative;
+    }
+
     .navbar__item a,
     h1 {
         color: #f1f2f6;

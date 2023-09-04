@@ -79,3 +79,9 @@ p {
 .profil__gambar:hover .profil__gambar__latar {
     margin-top: 1rem;
 }
+
+@media screen and (max-width: 650px) {
+    body {
+        display: none;
+    }
+}
