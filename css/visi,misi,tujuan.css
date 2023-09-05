@@ -89,30 +89,35 @@ p {
 
 @media screen and (max-width: 650px) {
     .atas {
-        padding: 0 0 3rem 0;
+        padding: 0;
     }
 
     .tengah {
         flex-direction: row-reverse;
-        padding: 3rem 0;
+        padding: 0;
     }
 
     .bawah {
-        padding: 3rem 0 6rem 0;
-    }
-}
-
-@media screen and (max-width: 300px) {
-    .atas {
-        padding: 0 0 1rem 0;
+        padding: 0;
     }
 
-    .tengah {
-        flex-direction: row-reverse;
-        padding: 1rem 0;
+    .visi {
+        height: auto;
+        margin: 2rem 0;
     }
 
-    .bawah {
-        padding: 1rem 0 3rem 0;
+    .visi__info h1 {
+        font-size: 4vw;
+        margin-bottom: 1.5vh;
+    }
+
+    .visi__info ul,
+    p {
+        font-size: 1.3vw;
+        margin-bottom: 0.8vh;
+    }
+
+    .visi__gambar {
+        width: 35vw;
     }
 }
