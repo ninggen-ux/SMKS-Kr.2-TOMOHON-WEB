@@ -33,16 +33,16 @@ li {
 }
 
 .atas {
-    padding: 0 0 10vh 0;
+    padding: 0 0 5vh 0;
 }
 
 .tengah {
     flex-direction: row-reverse;
-    padding: 10vh 0;
+    padding: 5vh 0;
 }
 
 .bawah {
-    padding: 10vh 0 15vh 0;
+    padding: 5vh 0 5vh 0;
 }
 
 .visi__gambar {
@@ -95,15 +95,16 @@ p {
     .tengah {
         flex-direction: row-reverse;
         padding: 0;
+        margin: 1.5rem 0;
     }
 
     .bawah {
         padding: 0;
+        margin: 1.5rem 0;
     }
 
     .visi {
         height: auto;
-        margin: 2rem 0;
     }
 
     .visi__info h1 {
