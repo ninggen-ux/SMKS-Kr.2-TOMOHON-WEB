@@ -15,7 +15,7 @@ body {
     overflow-x: hidden;
 }
 
-.navbar__item a,
+a,
 h1 {
     text-decoration: none;
     color: #f1f2f6;
