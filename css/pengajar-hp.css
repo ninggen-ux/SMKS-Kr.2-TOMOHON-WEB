@@ -35,7 +35,11 @@ h1 {
     }
 
     .menu-pengajar {
-        display: block;
+        display: flex;
+        width: 100vw;
+        height: auto;
+        align-items: center;
+        flex-direction: column;
     }
 
     .menu-pengajar h1 {
