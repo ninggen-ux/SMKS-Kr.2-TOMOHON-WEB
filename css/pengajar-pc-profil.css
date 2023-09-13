@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     background-color: #064789;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .navbar__item a,
@@ -59,22 +59,22 @@ p {
 }
 
 .profil__gambar__latar {
-    width: 37vw;
+    width: 40vw;
     height: auto;
     transition: 0.3s ease-in-out;
 }
 
 .profil__gambar__guru {
-    width: 35vw;
+    width: 40vw;
     height: auto;
     position: absolute;
     top: -0.8vw;
-    left: 2vw;
+    left: -1vw;
     transition: 0.3s ease-in-out;
 }
 
 .profil__gambar:hover .profil__gambar__guru {
-    left: 1vw;
+    left: -2.5vw;
 }
 
 .profil__gambar:hover .profil__gambar__latar {
