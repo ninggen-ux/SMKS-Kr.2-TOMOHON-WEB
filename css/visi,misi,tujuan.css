@@ -56,3 +56,17 @@ body {
     width: 50vw;
     text-align: center;
 }
+
+@media screen and (max-width: 1000px) {
+    .item {
+        width: 80vw;
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .item {
+        width: 85vw;
+        font-size: 0.6em;
+    }
+}
