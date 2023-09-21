@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #f1f2f6;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #064789;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.berita {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem 0;
+    margin: 0 0 3rem 0;
+}
+
+.berita__item {
+    display: flex;
+    width: 80vw;
+    gap: 1rem;
+    text-align: justify;
+    font-size: 0.8vw;
+}
+
+.kanan {
+    flex-direction: row-reverse;
+}
+
+.berita__item img {
+    width: 30vw;
+    height: auto;
+    border: 1px solid #f1f2f6;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 650px) {
+    .berita__item {
+        flex-direction: column;
+        align-items: center;
+        width: 80vw;
+        font-size: 1.5vw;
+    }
+
+    .berita__item img {
+        width: 100%;
+    }
+}
