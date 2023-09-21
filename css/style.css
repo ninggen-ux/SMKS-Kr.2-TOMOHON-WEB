@@ -51,30 +51,27 @@
     cursor: pointer;
 }
 
+.navbar__animasi__bawah::before {
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    width: 0;
+    height: 3px;
+    background-color: #f1f2f6;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar__animasi__bawah:hover::before {
+    width: 100%;
+}
+
 .navbar__item__pengajar .hp {
     display: none;
 }
 
 .navbar__item__container .icon {
     display: none;
-}
-
-@media screen and (min-width: 651px) {
-    .navbar__animasi__bawah::before {
-        position: absolute;
-        content: "";
-        bottom: -5px;
-        height: 4px;
-        width: 100%;
-        background-color: #f1f2f6;
-        border-radius: 3px;
-        transform: scaleX(0);
-        transition: 0.3s ease-in-out;
-    }
-
-    .navbar__animasi__bawah:hover::before {
-        transform: scaleX(1);
-    }
 }
 
 @media screen and (max-width: 650px) {
@@ -140,6 +137,10 @@
     }
 
     .dropdown {
+        display: none;
+    }
+
+    .navbar__animasi__bawah::before {
         display: none;
     }
 }
