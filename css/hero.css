@@ -98,6 +98,7 @@ button:hover::before {
         font-size: 0.8em;
         margin-bottom: 1rem;
     }
+
     button {
         font-size: 0.8em;
     }
@@ -124,6 +125,10 @@ button:hover::before {
 
     .hero__keterangan h1 {
         text-align: left;
+    }
+
+    button {
+        width: 100%;
     }
 }
 

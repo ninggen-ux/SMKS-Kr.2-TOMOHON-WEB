@@ -21,7 +21,7 @@ body {
     width: 90vw;
     height: auto;
     display: flex;
-    gap: 2vw;
+    gap: 2.5rem 1vw;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
@@ -51,7 +51,13 @@ body {
     font-family: "Nunito Sans", sans-serif;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (min-width: 1300px) {
+    .fasilitas__container {
+        gap: 3rem 1vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
     .fasilitas__container__item {
         width: 16vw;
         padding: 0 1.5vw 1.5vw 1.5vw;
@@ -66,5 +72,23 @@ body {
     .fasilitas__container__item__tulisan {
         font-size: 2vw;
         padding: 4.8vw 0 0 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .fasilitas__container__item {
+        width: 35vw;
+        padding: 0 1.5vw 1.5vw 1.5vw;
+    }
+
+    .fasilitas__container__item img {
+        width: 18vw;
+        top: -8vw;
+        left: 8vw;
+    }
+
+    .fasilitas__container__item__tulisan {
+        font-size: 4vw;
+        padding: 8vw 0 0 0;
     }
 }
