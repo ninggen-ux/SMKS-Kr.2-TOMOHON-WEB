@@ -61,6 +61,7 @@ button {
     overflow: hidden;
     border-radius: 5px;
     border: 1px solid #3498db;
+    cursor: pointer;
 }
 
 button::before {

@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Playfair+Display:wght@500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #f1f2f6;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #064789;
+}
+
+.fasilitas__container {
+    width: 90vw;
+    height: auto;
+    display: flex;
+    gap: 2vw;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.fasilitas__container__item {
+    background-color: #3498db;
+    border-radius: 5px;
+    position: relative;
+    width: 9vw;
+    height: auto;
+    padding: 0 1vw 1vw 1vw;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.fasilitas__container__item img {
+    width: 5vw;
+    height: auto;
+    position: absolute;
+    top: -2.3vw;
+    left: 2.15vw;
+}
+
+.fasilitas__container__item__tulisan {
+    text-align: center;
+    padding: 2.5vw 0 0 0;
+    font-size: 1vw;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+@media screen and (max-width: 770px) {
+    .fasilitas__container__item {
+        width: 16vw;
+        padding: 0 1.5vw 1.5vw 1.5vw;
+    }
+
+    .fasilitas__container__item img {
+        width: 10vw;
+        top: -4.3vw;
+        left: 3vw;
+    }
+
+    .fasilitas__container__item__tulisan {
+        font-size: 2vw;
+        padding: 4.8vw 0 0 0;
+    }
+}
