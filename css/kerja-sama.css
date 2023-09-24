@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #064789;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f1f2f6;
+    overflow-x: hidden;
+}
+
+.kerja-sama {
+    width: 90vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.kerja-sama img {
+    width: 13vw;
+    height: auto;
+    transition: 0.3s ease-in-out;
+}
+
+.kerja-sama img:hover {
+    scale: 1.1;
+}
+
+.navbar__animasi__bawah::before {
+    background-color: #064789;
+}
+
+@media screen and (max-width: 768px) {
+    .kerja-sama img {
+        width: 20vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .kerja-sama img {
+        width: 40vw;
+    }
+}

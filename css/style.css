@@ -23,7 +23,7 @@
 }
 
 .bar {
-    width: 30vw;
+    width: 40vw;
     display: flex;
     justify-content: space-between;
     min-width: 17rem;
@@ -74,7 +74,7 @@
     display: none;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 850px) {
     .navbar {
         flex-direction: row;
         margin: 2rem 0 3rem 0;
@@ -124,6 +124,7 @@
         backdrop-filter: blur(1px);
         padding: 10px;
         border-radius: 5px;
+        z-index: 1;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
             rgba(0, 0, 0, 0.22) 0px 10px 10px;
     }
