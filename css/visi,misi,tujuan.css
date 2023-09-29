@@ -75,7 +75,7 @@ li {
 @media screen and (max-width: 1000px) {
     .item {
         width: 80vw;
-        font-size: 0.6em;
+        font-size: 0.8em;
     }
 
     .visi__item {
@@ -86,6 +86,6 @@ li {
 @media screen and (max-width: 650px) {
     .item {
         width: 85vw;
-        font-size: 0.4em;
+        font-size: 0.6em;
     }
 }
