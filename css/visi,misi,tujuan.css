@@ -24,6 +24,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 17vh;
+}
+
+.visi__item p {
+    font-size: 2em;
 }
 
 .misi {
@@ -44,6 +49,11 @@ body {
     justify-content: center;
 }
 
+ol,
+li {
+    font-size: 1.2em;
+}
+
 .tujuan__item h1 {
     color: #064789;
 }
@@ -52,15 +62,24 @@ body {
     color: #064789;
 }
 
+.judul {
+    font-size: 5em;
+    padding-bottom: 0.5vw;
+}
+
 .item {
-    width: 50vw;
-    text-align: center;
+    width: 80vw;
+    text-align: left;
 }
 
 @media screen and (max-width: 1000px) {
     .item {
         width: 80vw;
         font-size: 0.8em;
+    }
+
+    .visi__item {
+        text-align: center;
     }
 }
 
