@@ -19,7 +19,7 @@ body {
 .pimpinan {
     width: 90vw;
     height: auto;
-    min-height: 10rem;
+    min-height: 15rem;
     display: flex;
     align-items: center;
     gap: 1vw;
@@ -76,6 +76,7 @@ body {
 
 @media screen and (max-width: 1000px) {
     .pimpinan {
+        min-height: 10rem;
         gap: 0.5rem;
     }
 
