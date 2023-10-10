@@ -19,91 +19,97 @@ body {
 }
 
 .fasilitas {
-    align-items: center;
+    width: 95vw;
     display: flex;
-    width: 90vw;
-    gap: 0.5rem 0;
     flex-direction: column;
 }
 
-.fasilitas__container {
+.fasilitas__tulisan {
+    display: flex;
+    width: 100%;
+    text-align: justify;
+    justify-content: center;
+}
+
+.fasilitas__tulisan p {
+    width: 100%;
+}
+
+.fasilitas__item {
     width: 50%;
-    border: 1px solid #f1f2f6;
+}
+
+.fasilitas__item h3 {
+    cursor: pointer;
+}
+
+.fasilitas__item__conten {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem 0;
+    display: none;
+}
+
+.fasilitas__item__conten p {
+    text-align: justify;
+}
+
+.fasilitas__item__conten__gambar {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-radius: 3px;
+}
+
+.fasilitas__item__conten__gambar img {
+    width: 100%;
+    border-radius: 1px;
+}
+
+.fasilitas__item__conten__gambar::-webkit-scrollbar {
+    height: 0.5vh;
+}
+
+.fasilitas__item__conten__gambar::-webkit-scrollbar-track {
     background-color: #f1f2f6;
-    border-radius: 5px;
-    margin: 0.5rem;
 }
 
-.fasilitas__container__gambar {
+.fasilitas__item__conten__gambar::-webkit-scrollbar-thumb {
+    background-color: #3498db;
+}
+
+.fasilitas__item__conten table {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
 }
 
-.gambar-ruangan {
+.fasilitas__item__conten th,
+.fasilitas__item__conten td {
     width: 50%;
-    height: auto;
+    text-align: center;
 }
 
-.khusus {
-    width: 100%;
-    height: auto;
-}
-
-.fasilitas__container__item {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.fasilitas__container__item th,
-.fasilitas__container__item td {
-    width: 50%;
-    border-radius: 5px;
-}
-
-.fasilitas__container__item th {
+.fasilitas__item__conten th {
     background-color: #008cff;
 }
 
-.fasilitas__container__item td {
+.fasilitas__item__conten td {
     background-color: #c7e6ff;
     color: #064789;
 }
 
-.fasilitas__container__item h1,
-.fasilitas__container__item i,
-.fasilitas__container__item td {
-    text-align: center;
-}
-
-.fasilitas__container__item h1,
-.fasilitas__container__item i {
-    color: #3498db;
-}
-
-.fasilitas__container__item:hover h1 {
-    display: none;
-}
-
-.fasilitas__container__item table {
-    display: none;
-}
-
-.fasilitas__container__item:hover table {
-    display: table;
+.fasilitas__item:hover .fasilitas__item__conten {
+    display: flex;
 }
 
 @media screen and (max-width: 1000px) {
-    .fasilitas__container {
-        width: 90%;
+    .fasilitas__item {
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 650px) {
-    .fasilitas__container__item h1,
-    .fasilitas__container__item th,
-    .fasilitas__container__item td {
-        font-size: 0.7em;
+    .fasilitas__item h3 {
+        text-align: center;
     }
 }

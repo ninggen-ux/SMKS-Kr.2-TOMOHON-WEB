@@ -74,6 +74,10 @@
     display: none;
 }
 
+.teks {
+    text-indent: 2rem;
+}
+
 @media screen and (max-width: 1100px) {
     .navbar {
         flex-direction: row;
