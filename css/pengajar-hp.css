@@ -14,7 +14,7 @@ h1 {
     color: #064789;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1000px) {
     body {
         width: 100vw;
         height: 100vh;
