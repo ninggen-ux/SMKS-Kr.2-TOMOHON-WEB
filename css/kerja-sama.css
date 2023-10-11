@@ -38,6 +38,25 @@ body {
     background-color: #064789;
 }
 
+.list {
+    width: 98%;
+    list-style-position: inside;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem 0;
+}
+
+.list h2 {
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .list {
+        gap: 3rem 0;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .kerja-sama img {
         width: 20vw;
