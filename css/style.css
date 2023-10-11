@@ -116,8 +116,8 @@
         right: 0;
         width: 88vw;
         min-width: 0;
-        background-color: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(1px);
+        background-color: rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
         padding: 10px;
         border-radius: 5px;
         z-index: 1;
@@ -135,6 +135,11 @@
 
     .dropdown {
         display: none;
+    }
+
+    .navbar__animasi__bawah,
+    .hp {
+        font-size: 2em;
     }
 
     .navbar__animasi__bawah::before {
