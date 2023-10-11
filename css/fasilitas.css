@@ -22,6 +22,7 @@ body {
     width: 95vw;
     display: flex;
     flex-direction: column;
+    gap: 1rem 0;
 }
 
 .fasilitas__tulisan {
@@ -36,18 +37,13 @@ body {
 }
 
 .fasilitas__item {
-    width: 50%;
-}
-
-.fasilitas__item h3 {
-    cursor: pointer;
+    width: 100%;
 }
 
 .fasilitas__item__conten {
     display: flex;
     flex-direction: column;
     gap: 0.4rem 0;
-    display: none;
 }
 
 .fasilitas__item__conten p {
@@ -63,7 +59,7 @@ body {
 }
 
 .fasilitas__item__conten__gambar img {
-    width: 100%;
+    width: 50%;
     border-radius: 1px;
 }
 
@@ -98,12 +94,12 @@ body {
     color: #064789;
 }
 
-.fasilitas__item:hover .fasilitas__item__conten {
-    display: flex;
-}
-
 @media screen and (max-width: 1000px) {
     .fasilitas__item {
+        width: 100%;
+    }
+
+    .fasilitas__item__conten__gambar img {
         width: 100%;
     }
 }
