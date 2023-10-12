@@ -43,7 +43,7 @@ p {
 }
 
 .profil__info p {
-    font-size: 0.8vw;
+    font-size: 1vw;
     margin-bottom: 1.5%;
 }
 
@@ -52,6 +52,7 @@ p {
     width: 5vw;
     justify-content: space-between;
     font-size: 1.3vw;
+    gap: 7%;
 }
 
 .profil__gambar {

@@ -101,19 +101,26 @@ body {
         text-align: center;
         margin-top: 1%;
         color: #f1f2f6;
-        font-size: 4vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .nama-profesi h1 {
         font-size: 5vw;
     }
 
+    .nama-profesi p {
+        font-size: 3.5vw;
+        width: 95%;
+    }
+
     .info-profil {
         width: 85vw;
-        height: 95vw;
+        height: 95%;
         background-color: #f1f2f6;
         border-radius: 5%;
-        margin-top: 5vh;
+        margin-top: 5%;
         display: flex;
         flex-direction: column;
         box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
@@ -176,6 +183,12 @@ body {
 
     .tombol-kembali {
         margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .info-profil {
+        height: 95vw;
     }
 }
 
