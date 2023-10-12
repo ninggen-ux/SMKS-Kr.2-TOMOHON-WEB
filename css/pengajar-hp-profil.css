@@ -77,8 +77,8 @@ body {
     body::before {
         content: "";
         position: absolute;
-        width: 100vw;
-        height: 21rem;
+        width: 100%;
+        height: 35rem;
         background: url(../img/background-biru.jpg) no-repeat;
         background-attachment: cover;
         z-index: -1;
@@ -86,7 +86,7 @@ body {
     }
 
     .foto-profil {
-        margin-top: 5vh;
+        margin-top: 5%;
     }
 
     .foto-profil img {
@@ -98,7 +98,7 @@ body {
 
     .nama-profesi {
         text-align: center;
-        margin-top: 1vh;
+        margin-top: 1%;
         color: #f1f2f6;
         font-size: 4vw;
     }
@@ -109,7 +109,7 @@ body {
 
     .info-profil {
         width: 85vw;
-        height: 55vh;
+        height: 95vw;
         background-color: #f1f2f6;
         border-radius: 5%;
         margin-top: 5vh;
@@ -184,7 +184,7 @@ body {
     .info-profil__info-pribadi__item {
         flex-direction: column;
         margin: 1vh;
-        font-size: 4vw;
+        font-size: 3.5vw;
         text-align: center;
     }
 }
