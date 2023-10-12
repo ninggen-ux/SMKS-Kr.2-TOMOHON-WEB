@@ -154,13 +154,22 @@ body {
         width: 85%;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         color: #2575aa;
         font-size: 3.5vw;
-        margin: 2.5vh 3vh;
+        margin: 2.5% 3%;
+        gap: 0 2rem;
+    }
+
+    .info-profil__info-pribadi__item h1 {
+        text-align: left;
+        width: 50%;
     }
 
     .info-profil__info-pribadi__item p {
         color: #2575aa;
+        text-align: right;
+        width: 50%;
     }
 
     .tombol-kembali {
@@ -177,14 +186,5 @@ body {
 @media screen and (max-width: 350px) {
     body::before {
         height: 15rem;
-    }
-}
-
-@media screen and (max-width: 250px) {
-    .info-profil__info-pribadi__item {
-        flex-direction: column;
-        margin: 1vh;
-        font-size: 3.5vw;
-        text-align: center;
     }
 }
