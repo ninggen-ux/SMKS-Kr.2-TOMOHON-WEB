@@ -34,7 +34,7 @@ p {
     display: flex;
     width: 38vw;
     flex-direction: column;
-    margin: 0 0 7vh 0;
+    margin-bottom: 2.5vh;
 }
 
 .profil__info__nama {
@@ -42,16 +42,45 @@ p {
     margin-bottom: 3%;
 }
 
-.profil__info p {
+.profil__info__moto {
+    margin-bottom: 2%;
+    font-size: 1.3vw;
+}
+
+.profil__info__deskripsi {
+    display: flex;
+    flex-direction: column;
     font-size: 1vw;
-    margin-bottom: 1.5%;
+    margin-bottom: 1%;
+    width: 100%;
+    gap: 0.3rem 0;
+}
+
+.profil__info__deskripsi__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    flex-direction: row;
+    gap: 0 0.5rem;
+}
+
+.profil__info__deskripsi__item i {
+    width: 3%;
+    text-align: center;
+}
+
+.profil__info__deskripsi__item p {
+    width: 97%;
+    text-align: left;
 }
 
 .profil__info__sosial-media {
     display: flex;
     width: 5vw;
     justify-content: space-between;
-    font-size: 1.3vw;
+    font-size: 2vw;
     gap: 7%;
 }
 
