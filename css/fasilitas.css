@@ -45,6 +45,8 @@ body {
 
 .fasilitas__item h3 {
     color: #3498db;
+    font-size: 5vw;
+    padding: 2%;
 }
 
 .fasilitas__item__conten {
@@ -102,11 +104,13 @@ body {
 
 .fasilitas__item__conten th {
     background-color: #008cff;
+    padding: 1%;
 }
 
 .fasilitas__item__conten td {
     background-color: #c7e6ff;
     color: #064789;
+    padding: 0.5%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -133,5 +137,6 @@ body {
 
     .fasilitas__item h3 {
         text-align: center;
+        font-size: 9vw;
     }
 }
