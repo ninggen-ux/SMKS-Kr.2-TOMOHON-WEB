@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #f1f2f6;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #064789;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.berita-isi {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.berita-isi__item {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.berita-isi__item img {
+    width: 100%;
+    border-radius: 3px;
+    margin-bottom: 2%;
+    border: 1px solid #f1f2f6;
+}
+
+.berita-isi__item p {
+    text-align: justify;
+    margin-bottom: 3%;
+}
