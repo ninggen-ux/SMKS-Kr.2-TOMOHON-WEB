@@ -92,21 +92,15 @@ body {
         width: 90%;
     }
 
+    .berita__item img {
+        width: 40%;
+    }
+
     .berita__item__tulisan h1 {
         font-size: 0.7em;
     }
 
     .berita__item__tulisan P {
         font-size: 0.6em;
-    }
-}
-
-@media screen and (max-width: 380px) {
-    .berita__item__tulisan h1 {
-        font-size: 0.5em;
-    }
-
-    .berita__item__tulisan p {
-        font-size: 0.4em;
     }
 }
