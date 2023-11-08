@@ -92,12 +92,16 @@ body {
         width: 90%;
     }
 
+    .berita__item {
+        padding: 1% 1.7% 1% 1.7%;
+    }
+
     .berita__item img {
         width: 40%;
     }
 
     .berita__item__tulisan h1 {
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
 
     .berita__item__tulisan P {
