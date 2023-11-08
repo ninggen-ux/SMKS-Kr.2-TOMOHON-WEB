@@ -18,46 +18,95 @@ body {
 }
 
 .berita {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 3rem 0;
-    margin: 0 0 3rem 0;
+    align-items: center;
 }
 
 .berita__item {
+    width: 70%;
     display: flex;
-    width: 80vw;
-    gap: 1rem;
-    text-align: justify;
-    font-size: 0.8vw;
-}
-
-.kanan {
-    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    background-color: #f1f2f6;
+    border-radius: 5px;
+    padding: 1% 1.5% 1% 1.5%;
+    margin-bottom: 2%;
+    gap: 3%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .berita__item img {
-    width: 30vw;
-    height: auto;
-    border: 1px solid #f1f2f6;
+    width: 30%;
     border-radius: 5px;
 }
 
-@media screen and (max-width: 650px) {
-    .berita__item {
-        flex-direction: column;
-        align-items: center;
-        width: 80vw;
-        font-size: 3vw;
+.berita__item__tulisan h1 {
+    color: #064789;
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+.berita__item__tulisan p {
+    color: #064789;
+    font-size: 1.1em;
+}
+
+.berita__item__tulisan h1:hover {
+    text-decoration: underline;
+    color: #3498db;
+}
+
+@media screen and (max-width: 800px) {
+    .berita__item__tulisan h1 {
+        font-size: 1.1em;
     }
 
-    .berita__item img {
-        width: 100%;
+    .berita__item__tulisan p {
+        font-size: 1em;
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 730px) {
+    .berita__item__tulisan h1 {
+        font-size: 0.9em;
+    }
+
+    .berita__item__tulisan p {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .berita__item__tulisan h1 {
+        font-size: 0.8em;
+    }
+
+    .berita__item__tulisan p {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 500px) {
     .berita__item {
-        font-size: 4.5vw;
+        width: 90%;
+    }
+
+    .berita__item__tulisan h1 {
+        font-size: 0.7em;
+    }
+
+    .berita__item__tulisan P {
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .berita__item__tulisan h1 {
+        font-size: 0.5em;
+    }
+
+    .berita__item__tulisan p {
+        font-size: 0.4em;
     }
 }
