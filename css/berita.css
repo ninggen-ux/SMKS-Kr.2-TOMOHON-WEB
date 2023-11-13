@@ -28,27 +28,23 @@ body {
     width: 70%;
     display: flex;
     justify-content: space-evenly;
-    background-color: #f1f2f6;
-    border-radius: 5px;
     padding: 1% 1.5% 1% 1.5%;
-    margin-bottom: 2%;
+    margin-bottom: 0;
     gap: 3%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .berita__item img {
-    width: 30%;
+    width: 35%;
     border-radius: 5px;
 }
 
 .berita__item__tulisan h1 {
-    color: #064789;
     font-size: 1.5em;
     text-align: justify;
 }
 
 .berita__item__tulisan p {
-    color: #064789;
     font-size: 1.1em;
 }
 
