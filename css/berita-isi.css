@@ -46,9 +46,17 @@ body {
 
 .berita-isi__item__img i {
     margin-bottom: 2%;
+    text-align: justify;
 }
 
 .berita-isi__item p {
     text-align: justify;
     margin-bottom: 3%;
+}
+
+@media screen and (max-width: 800px) {
+    .berita-isi__item__img i {
+        font-size: 2vw;
+        margin-bottom: 3%;
+    }
 }
