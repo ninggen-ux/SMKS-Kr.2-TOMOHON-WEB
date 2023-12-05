@@ -46,7 +46,7 @@ body {
 
 .angles {
     position: absolute;
-    top: 21rem;
+    top: 24vw;
     font-size: 3em;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
@@ -147,6 +147,10 @@ body {
         padding: 1.5%;
     }
 
+    .angles {
+        top: 40vw;
+    }
+
     .fasilitas__item__conten__gambar {
         gap: 0 1.5%;
         padding: 1%;
@@ -158,6 +162,11 @@ body {
 }
 
 @media screen and (max-width: 650px) {
+    .angles {
+        top: 44vw;
+        font-size: 2em;
+    }
+
     .fasilitas__item__conten__gambar {
         gap: 0 2%;
         padding: 1.3;
