@@ -163,8 +163,8 @@ body {
 
 @media screen and (max-width: 650px) {
     .angles {
-        top: 44vw;
-        font-size: 2em;
+        top: 42vw;
+        font-size: 1.7em;
     }
 
     .fasilitas__item__conten__gambar {
