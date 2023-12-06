@@ -23,7 +23,7 @@ fasilitasItem.forEach(item => {
 faAnglesLeft.forEach(left => {
     left.addEventListener("click", () => {
         fasilitasItemContenGambar.forEach(item => {
-            item.scrollBy(-100, 0);
+            item.scrollBy(-500, 0);
         })
     })
 })
@@ -31,7 +31,7 @@ faAnglesLeft.forEach(left => {
 faAnglesRight.forEach(right => {
     right.addEventListener("click", () => {
         fasilitasItemContenGambar.forEach(item => {
-            item.scrollBy(100, 0);
+            item.scrollBy(500, 0);
         })
     })
 })
