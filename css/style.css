@@ -51,6 +51,12 @@
     cursor: pointer;
 }
 
+.navbar__animasi__bawah,
+.hp,
+.logo__item__a a h1 {
+    font-size: 1em;
+}
+
 .navbar__animasi__bawah::before {
     position: absolute;
     content: "";
