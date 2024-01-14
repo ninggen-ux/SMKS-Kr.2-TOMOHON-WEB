@@ -91,6 +91,7 @@ p {
 
 @media screen and (max-width: 950px) {
     .hero__keterangan h1 {
+        font-size: 2.5em;
         margin-bottom: 1.5rem;
     }
 
