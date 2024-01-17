@@ -40,6 +40,9 @@ h1 {
 .hero__keterangan {
     color: var(--second-color);
     width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero__keterangan h1 {
@@ -52,8 +55,22 @@ h1 {
     margin-bottom: 1rem;
 }
 
+.hero__keterangan button {
+    font-size: 0.5em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.hero__keterangan button h1 {
+    color: var(--main-color);
+    margin-bottom: 0;
+}
+
 .hero__keterangan h1,
-p {
+.hero__keterangan p,
+.hero__keterangan button {
     text-align: center;
 }
 
@@ -74,6 +91,7 @@ p {
         display: flex;
         flex-direction: column;
         width: 70%;
+        align-items: flex-start;
     }
 
     .hero__keterangan p {
@@ -107,6 +125,22 @@ p {
 }
 
 @media screen and (max-width: 400px) {
+    .hero__keterangan button {
+        width: 100%;
+    }
+
+    .hero__keterangan a {
+        width: 100%;
+    }
+
+    .hero__keterangan a button h1 {
+        text-align: center;
+    }
+
+    .hero__keterangan {
+        align-items: center;
+    }
+
     .hero__gambar img {
         width: 60vw;
     }
