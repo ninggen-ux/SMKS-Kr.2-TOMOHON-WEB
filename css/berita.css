@@ -27,7 +27,7 @@ body {
 .berita__item {
     width: 80%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 1% 1.5% 1% 1.5%;
     margin-bottom: 0;
     gap: 3%;
@@ -36,6 +36,8 @@ body {
 .berita__item img {
     width: 30%;
     border-radius: 5px;
+    aspect-ratio: 3/2;
+    object-fit: cover;
 }
 
 .berita__item__tulisan h1 {
