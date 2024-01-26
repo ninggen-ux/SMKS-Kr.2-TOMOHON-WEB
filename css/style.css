@@ -14,8 +14,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 3rem 0 3vw 0;
-    padding: 0 7vw 0 5.5vw;
+    margin: 0 0 3vw 0;
+    padding: 3.5vh 6.5vw 3.5vh 5vw;
+    background-color: #203074;
 }
 
 .navbar__item {
@@ -87,7 +88,7 @@
 @media screen and (max-width: 1100px) {
     .navbar {
         flex-direction: row;
-        margin: 2rem 0 3rem 0;
+        margin: 0 0 3rem 0;
     }
 
     .logo__item__a img {

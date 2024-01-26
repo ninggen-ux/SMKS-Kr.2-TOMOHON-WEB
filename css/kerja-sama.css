@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    color: #064789;
+    color: #f1f2f6;
 }
 
 body {
@@ -34,10 +34,6 @@ body {
     scale: 1.1;
 }
 
-.navbar__animasi__bawah::before {
-    background-color: #064789;
-}
-
 .list {
     width: 100%;
     list-style-position: inside;
@@ -61,6 +57,7 @@ body {
 
 .list li {
     background-color: #c7e6ff;
+    color: #064789;
 }
 
 @media screen and (max-width: 1000px) {

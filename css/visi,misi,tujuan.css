@@ -12,7 +12,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #064789;
+    background-color: #293b89;
     position: relative;
     overflow-x: hidden;
 }
@@ -20,7 +20,7 @@ body {
 .visi {
     width: 100vw;
     height: 82.4vh;
-    background-color: #064789;
+    background-color: #293b89;
     display: flex;
     align-items: center;
     justify-content: center;
