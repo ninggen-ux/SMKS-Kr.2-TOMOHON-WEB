@@ -10,9 +10,7 @@ fasilitasItem.forEach(item => {
             angle.style.opacity = 1;
         })
     })
-})
-
-fasilitasItem.forEach(item => {
+    
     item.addEventListener("mouseout", () => {
         angles.forEach(angle => {
             angle.style.opacity = 0;
@@ -20,18 +18,14 @@ fasilitasItem.forEach(item => {
     })
 })
 
-faAnglesLeft.forEach(left => {
-    left.addEventListener("click", () => {
-        fasilitasItemContenGambar.forEach(item => {
-            item.scrollBy(-500, 0);
-        })
+faAnglesLeft.forEach((item, index) => {
+    item.addEventListener("click", () => {
+        fasilitasItemContenGambar[index].scrollBy(-500, 0);
     })
 })
 
-faAnglesRight.forEach(right => {
-    right.addEventListener("click", () => {
-        fasilitasItemContenGambar.forEach(item => {
-            item.scrollBy(500, 0);
-        })
+faAnglesRight.forEach((item, index) => {
+    item.addEventListener("click", () => {
+        fasilitasItemContenGambar[index].scrollBy(500, 0);
     })
 })
