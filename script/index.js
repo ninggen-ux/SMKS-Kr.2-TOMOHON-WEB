@@ -1,7 +1,7 @@
 const kalenderPendidikan = document.querySelector(".kalender-pendidikan");
 
 document.addEventListener("DOMContentLoaded", () => {
-    alert("Website ini masih dalam pengembangan. Jika anda menemukan suatu hal yang kurang, bug, element yang tidak berada di tempat semestinya ataupun saran silahkan menuju kelink ini: https://docs.google.com/forms/d/e/1FAIpQLScgID0TlWs5ggSDzSXfEuOb2wNHmGfViX9LacwoD94SzzvviQ/viewform?usp=sf_link");
+    alert("Website ini masih dalam pengembangan. Jika anda menemukan suatu hal yang kurang, bug, element yang tidak berada di tempat semestinya ataupun saran silahkan menuju kelink ini: https://docs.google.com/forms/d/e/1FAIpQLScgID0TlWs5ggSDzSXfEuOb2wNHmGfViX9LacwoD94SzzvviQ/viewform?usp=sf_link (jika ada hal yang kelihatan tidak sesuai mungkin penyebabnya adalah kami sedang melakukan update pada website)");
 });
 
 kalenderPendidikan.addEventListener("click", () => {
