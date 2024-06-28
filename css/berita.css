@@ -27,10 +27,9 @@ body {
 .berita__item {
     width: 80%;
     display: flex;
-    justify-content: space-between;
     padding: 1% 1.5% 1% 1.5%;
     margin-bottom: 0;
-    gap: 3%;
+    gap: 1.5rem;
 }
 
 .berita__item img {
@@ -42,7 +41,7 @@ body {
 
 .berita__item__tulisan h1 {
     font-size: 1.5em;
-    text-align: justify;
+    text-align: left;
 }
 
 .berita__item__tulisan p {
