@@ -1,0 +1,53 @@
+:root {
+    --main-color: #293b89;
+    --default: #f1f2f6;
+    --default-second: black;
+}
+
+body {
+    width: 100%;
+}
+
+.document {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.document__icon {
+    width: 100%;
+    font-size: 2em;
+    text-decoration: none;
+    color: var(--default-second);
+}
+
+.document__link {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 3rem 1rem;
+}
+
+.document__link div {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.document__link div img {
+    width: 100%;
+}
+
+.document__link div a {
+    text-decoration: none;
+    color: var(--default-second);
+    font-weight: 500;
+    text-align: center;
+}

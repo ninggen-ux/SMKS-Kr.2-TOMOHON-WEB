@@ -27,6 +27,7 @@ body {
     overflow-x: auto;
     overflow-y: hidden;
     padding: 0.5vw;
+    scroll-snap-type: x mandatory;
 }
 
 .angles {
@@ -40,7 +41,6 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
     transition: 0.2s ease-in-out;
-    opacity: 0;
 }
 
 .fa-angles-right {
@@ -77,6 +77,7 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 3px;
+    scroll-snap-align: center;
 }
 
 .pimpinan__item img {

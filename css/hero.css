@@ -13,18 +13,20 @@ body {
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     flex-direction: column;
-    background-image: url(../img/sekolah-bg.png);
+    background-image: url(../img/bg-17-agustus.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .navbar {
-    background-color: #202f743f;
+    background-color: #00000015;
 }
 
 a,
@@ -35,18 +37,20 @@ h1 {
 
 .hero {
     width: 100%;
-    height: 85%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
 
 .hero__keterangan {
+    width: 90%;
+    height: 40rem;
+    gap: 0.9rem;
     color: var(--second-color);
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 2rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero__keterangan h1 {
@@ -59,13 +63,29 @@ h1 {
     margin-bottom: 1rem;
 }
 
-.hero__keterangan button {
+.hero__keterangan__button {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.hero__keterangan__button a {
+    width: 23rem;
+}
+
+.hero__keterangan__button button {
+    width: 100%;
     font-size: 0.5em;
-    border-radius: 50px;
+    border-radius: 10px;
     border: none;
     cursor: pointer;
     padding: 0.25rem 1.3rem 0.25rem 1.3rem;
     text-align: center;
+}
+
+.hero__keterangan__button a button h1 {
+    text-align: center;
+    font-size: 2.5em;
 }
 
 .hero__keterangan p {
@@ -73,12 +93,11 @@ h1 {
 }
 
 .hero__keterangan h1 {
-    letter-spacing: 5px;
     text-align: left;
 }
 
 .hero__keterangan button h1 {
-    color: var(--main-color);
+    color: rgb(184, 0, 0);
     margin-bottom: 0;
 }
 
@@ -95,7 +114,7 @@ h1 {
 }
 
 .hero__gambar {
-    width: 40rem;
+    width: 35rem;
 }
 
 .elemen-6 {
@@ -104,12 +123,7 @@ h1 {
     left: 0;
     position: absolute;
     z-index: -1;
-}
-
-.kalender-pendidikan {
-    width: 70%;
-    margin-top: 6%;
-    text-align: justify;
+    display: none;
 }
 
 .kalender-pendidikan:hover {
@@ -119,7 +133,7 @@ h1 {
 
 @media screen and (max-width: 1100px) {
     body {
-        background-image: url(../img/sekolah-bg.png);
+        background-image: url(../img/bg-17-agustus.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -159,17 +173,18 @@ h1 {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
+    .hero__link {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .hero__keterangan button {
         width: 100%;
     }
 
     .hero__keterangan a button h1 {
         text-align: center;
-    }
-
-    .hero__keterangan {
-        align-items: start;
     }
 
     .hero__gambar img {
