@@ -55,6 +55,10 @@ body {
     background-color: var(--secondary-color);
 }
 
+.logo a span {
+    font-size: clamp(1rem, 1vw, 1vw);
+}
+
 .logo {
     display: inline-block;
     padding-left: 30px;
@@ -86,10 +90,13 @@ body {
     color: var(--secondary-color);
     text-decoration: none;
     font-weight: bold;
-    font-size: 18px;
     padding: 4px;
     position: relative;
     display: inline-block;
+}
+
+.navbar a, .sub-nav-container a { 
+    font-size: clamp(0.9rem, 1vw, 1vw); 
 }
 
 .navbar a::after {
@@ -113,7 +120,6 @@ body {
 
 .sub-nav-container a {
     display: inline-block;
-    font-size: 18px;
     font-weight: bold;
     padding-right: 5px;
     text-decoration: none;
@@ -121,6 +127,17 @@ body {
 
 .sub-nav-container a::after {
     content: none;
+}
+
+.sub-nav-container .sub1 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sub-nav-container .sub1 span, .sub-nav-container .sub1 i {
+    flex: 1;
+    text-align: center;
 }
 
 .sub-nav {
@@ -149,4 +166,25 @@ body {
 
 .fa-caret-down {
     font-size: 15px;
+}
+@media screen and (max-width: 1000px) {
+    .nav-container {
+        padding: 20px 10px;
+    }
+
+    .navbar {
+        padding: 5px 10px;
+    }
+
+    .logo {
+        padding-left: 10px;
+    }
+
+    .logo a {
+        font-size: 16px;
+    }
+    
+    .logo a span {
+        display: none;
+    }
 }

@@ -11,7 +11,7 @@
 }
 
 html {
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
 }
 
 .main {
@@ -20,6 +20,7 @@ html {
     text-align: center;
     align-items: center;
     height: 100vh;
+    padding: 1rem;
     color: white;
     opacity: 0; 
     animation: fadeInBlur 1.5s ease-in forwards;
@@ -28,7 +29,7 @@ html {
 
 .main h1 {
     font-family: 'League Spartan', sans-serif;
-    font-size: 50px;
+    font-size: clamp(2rem, 4vw, 4vw); /* 2rem, 4vw, 4vw */
 }
 
 /* Main CSS */
@@ -97,4 +98,19 @@ html {
     background-color: rgb(75, 17, 129);
     color: white;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .main-page-container {
+        flex-direction: column;
+    }
+
+    .link-icon {
+        width: 80vw;
+    }
+
+    .button-link button {
+        width: 80vw;
+    }
+    
 }
