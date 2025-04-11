@@ -100,6 +100,13 @@ html {
     cursor: pointer;
 }
 
+.to-main-page {
+    position: sticky;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: 50%;
+}
+
 @media screen and (max-width: 1000px) {
     .main-page-container {
         flex-direction: column;
