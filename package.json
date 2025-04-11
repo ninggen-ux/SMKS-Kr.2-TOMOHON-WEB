@@ -6,7 +6,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "PPLG",
   "license": "ISC",
-  "description": ""
+  "description": "Website SMKS Kristen 2 Tomohon",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.4"
+  }
 }
