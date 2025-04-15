@@ -44,6 +44,15 @@ body {
   align-items: center;
 }
 
+.profil-guru-content p {
+  font-size: 75%;
+  text-align: center;
+  color: #f1f2f6;
+  font-weight: bold;
+  color: goldenrod;
+  margin-top: auto;
+}
+
 .profil-guru-content h3 {
   font-size: 100%;
   text-align: center;
@@ -80,11 +89,44 @@ body {
 
 .guru-umum {
   display: grid;
-  gap: 8px;
+  gap: 16px;
+  row-gap: 32px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .guru-umum .profil-guru-content-image-container {
   width: 100px;
   height: 100px;
+}
+
+@media screen and (max-width: 992px) {
+  .profil-guru {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .guru-inti {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .guru-inti-content {
+    flex: 0 0 calc(33.33% - 16px);
+  }
+
+  .guru-inti-content:nth-child(1),
+  .guru-inti-content:nth-child(2),
+  .guru-inti-content:nth-child(3) {
+    margin-bottom: 32px;
+  }
+
+  .guru-inti-content:nth-child(1) {
+    order: -1;
+  }
+
+  .guru-inti-content:nth-child(3) {
+    order: -1;
+  }
 }
