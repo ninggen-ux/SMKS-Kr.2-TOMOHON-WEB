@@ -1,4 +1,7 @@
 const subNav = document.querySelectorAll(".sub-nav a");
+import "../css/navbar-index.css";
+import "../css/hero.css";
+import "../css/transition.css";
 
 window.addEventListener("DOMContentLoaded", function () {
     const transitionOverlay = document.querySelector(".page-transition");
@@ -9,8 +12,11 @@ window.addEventListener("DOMContentLoaded", function () {
         transitionOverlay.style.pointerEvents = "none";
     }, 500);
 
-    links.forEach(link => {
-        if (link.getAttribute("href") && !link.getAttribute("href").startsWith("#")) {
+    links.forEach((link) => {
+        if (
+            link.getAttribute("href") &&
+            !link.getAttribute("href").startsWith("#")
+        ) {
             link.addEventListener("click", function (event) {
                 event.preventDefault();
                 const href = this.getAttribute("href");
@@ -33,11 +39,9 @@ if (window.innerWidth <= 1000) {
 }
 
 window.addEventListener("resize", function () {
-        if (window.innerWidth <= 1000) {
-            subNav[2].setAttribute("href", "./html/pengajar-hp.html");
-        } else {
-            subNav[2].setAttribute("href", "./html/pengajar-pc.html");
-        }
+    if (window.innerWidth <= 1000) {
+        subNav[2].setAttribute("href", "./html/pengajar-hp.html");
+    } else {
+        subNav[2].setAttribute("href", "./html/pengajar-pc.html");
     }
-)
-
+});
